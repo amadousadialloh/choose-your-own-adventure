@@ -6,14 +6,14 @@ const prompt = require("prompt-sync")();
 
 //Random number generator from 1 to 100
 const randomNumberGenerator = () => {
-  const guessNumber = Math.floor(Math.random() * 20) + 1;
+  const guessNumber = Math.floor(Math.random() * 5) + 1;
   return guessNumber;
 };
 
 //Game logic
 function guessingGameLogic() {
   //Ask the user to enter the number
-  let guess = prompt("Guess a number between 1 and 20: ");
+  let guess = prompt("Guess a number between 1 and 5: ");
 
   guess = parseInt(guess); //convert it to number
   const random = randomNumberGenerator();
